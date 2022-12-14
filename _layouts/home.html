@@ -12,7 +12,7 @@ title: navigation
     {% for article in sorted_pages %}
     {{article.categories}}
     <li><h3 style="display: inline;">{{ article.title }}</h3>
-    <a href="{{ article.url }}">detail</a></li>
+    <a href="{{ article.url | relative_url }}">detail</a></li>
     {% endfor %}
   </ul>
 
